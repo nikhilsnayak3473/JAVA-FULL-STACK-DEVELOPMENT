@@ -1,4 +1,14 @@
+body{
+    background-color: black;
+}
+h1{
+    color: azure;
+    text-align: center;
+}
+
 .para {
     font-style: italic;
     color:  cyan;
+    display: flex;
+    
 }
