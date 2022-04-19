@@ -1,7 +1,7 @@
 package aggregation;
 
 public class Account {
-    private final long accNumber;
+    private long accNumber;
     private String accHolderName;
     private long accBalance;
 
