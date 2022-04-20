@@ -1,8 +1,8 @@
 package composition;
 
 public class Engine {
-    private  int  cc;
-    private int modelNo;
+    private final int  cc;
+    private final int modelNo;
 
     public Engine(int cc, int modelNo) {
         this.cc = cc;

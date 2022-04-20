@@ -1,7 +1,7 @@
 package encapsulation;
 
 public class SimCard {
-    private String number;
+    private final String number;
     private String serviceProvider;
     private String localCallRate;
 

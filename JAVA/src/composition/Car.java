@@ -1,10 +1,10 @@
 package composition;
 
 public class Car {
-    private String model;
-    private  String colour;
-    private long price;
-    private Engine engine; // achieving has a relation by creating a reference to dependent class
+    private final String model;
+    private final String colour;
+    private final long price;
+    private final Engine engine; // achieving has a relation by creating a reference to dependent class
 
     public Car(String model, String colour, long price, Engine engine) { // achieving composite relation using constructor
         this.model = model;
