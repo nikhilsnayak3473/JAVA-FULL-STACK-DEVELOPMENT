@@ -1,19 +1,21 @@
 package arrays_and_collections;
 
-public class Ticket {
-    private final String ticketNumber;
+import org.jetbrains.annotations.NotNull;
+
+public class Ticket implements Comparable<Ticket>{
+    private final int ticketNumber;
     String passengerName;
     String arrivalPlace;
     String departurePlace;
 
-    public Ticket(String ticketNumber, String passengerName, String arrivalPlace, String departurePlace) {
+    public Ticket(int ticketNumber, String passengerName, String arrivalPlace, String departurePlace) {
         this.ticketNumber = ticketNumber;
         this.passengerName = passengerName;
         this.arrivalPlace = arrivalPlace;
         this.departurePlace = departurePlace;
     }
 
-    public String getTicketNumber() {
+    public int getTicketNumber() {
         return ticketNumber;
     }
 
@@ -25,5 +27,10 @@ public class Ticket {
                 ", departurePlace='" + departurePlace + '\'' +
                 ", passengerName='" + passengerName + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(@NotNull Ticket ticket){
+        return Integer.compare(this.ticketNumber, ticket.ticketNumber);
     }
 }

@@ -1,14 +1,13 @@
 package arrays_and_collections;
 
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class Bus {
     String busNumber;
     String busName;
-    int passengerCount=1;
     Ticket ticket;
-    ArrayList<Ticket> ticketsList= new ArrayList<>();
+    TreeSet<Ticket> ticketsList= new TreeSet<>();
     Scanner sc = new Scanner(System.in);
 
     public Bus(String busNumber, String busName) {
@@ -25,25 +24,25 @@ public class Bus {
     }
 
     public void generateTicket(){
+        System.out.println("Enter Ticket Number");
+        int ticketNumber = sc.nextInt();
         System.out.println("Enter the Passenger Name");
         String passengerName = sc.next();
         System.out.println("Enter Arrival Place");
         String arrivalPlace = sc.next();
         System.out.println("Enter Departure Place");
         String departurePlace = sc.next();
-        ticket = new Ticket(busNumber+passengerCount,passengerName,arrivalPlace,departurePlace);
+        ticket = new Ticket(ticketNumber,passengerName,arrivalPlace,departurePlace);
         ticketsList.add(ticket);
-        System.out.println("Ticket booked Successfully\nTicket NUmber: "+busNumber+passengerCount);
-        passengerCount++;
     }
 
     public void cancelTicket(){
         if (!ticketsList.isEmpty()){
             System.out.println("Enter Ticket Number");
-            String ticketNumber = sc.next();
+            int ticketNumber = sc.nextInt();
             for (Ticket ticket: ticketsList
                  ) {
-                if (ticket.getTicketNumber().equals(ticketNumber)){
+                if (ticket.getTicketNumber()==ticketNumber){
                     ticketsList.remove(ticket);
                     System.out.println("Ticket removed successfully");
                     return;
@@ -58,10 +57,10 @@ public class Bus {
     public void updateArrival(){
         if (!ticketsList.isEmpty()){
             System.out.println("Enter Ticket Number");
-            String ticketNumber = sc.next();
+            int ticketNumber = sc.nextInt();
             for (Ticket ticket: ticketsList
             ) {
-                if (ticket.getTicketNumber().equals(ticketNumber)){
+                if (ticket.getTicketNumber() == ticketNumber){
                     System.out.println("Enter new Arrival Place");
                     ticket.arrivalPlace = sc.next();
                     System.out.println("Arrival Place Updated  Successfully\nArrival Place: "+ticket.arrivalPlace);
@@ -77,10 +76,10 @@ public class Bus {
     public void updateDeparture(){
         if (!ticketsList.isEmpty()){
             System.out.println("Enter Ticket Number");
-            String ticketNumber = sc.next();
+            int ticketNumber = sc.nextInt();
             for (Ticket ticket: ticketsList
             ) {
-                if (ticket.getTicketNumber().equals(ticketNumber)){
+                if (ticket.getTicketNumber() == ticketNumber ){
                     System.out.println("Enter new Departure Place");
                     ticket.departurePlace = sc.next();
                     System.out.println("Departure Place Updated  Successfully\nDeparture Place: "+ticket.departurePlace);
@@ -96,10 +95,10 @@ public class Bus {
     public void viewTicketDetails(){
         if (!ticketsList.isEmpty()){
             System.out.println("Enter Ticket Number");
-            String ticketNumber = sc.next();
+            int ticketNumber = sc.nextInt();
             for (Ticket ticket: ticketsList
             ) {
-                if (ticket.getTicketNumber().equals(ticketNumber)){
+                if (ticket.getTicketNumber() == ticketNumber){
                     System.out.println(ticket);
                     return;
                 }
