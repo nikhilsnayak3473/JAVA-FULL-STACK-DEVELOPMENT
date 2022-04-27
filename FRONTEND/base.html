@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <title>Document</title>
 </head>
+
 <body>
-    <h1>This is a Heading</h1>
-    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,<strong>This is a strong statement</strong> necessitatibus? Vitae dolores in pariatur voluptatum, ea delectus sequi officia consectetur, repellendus consequuntur molestiae debitis quaerat reprehenderit <em>This is italic</em> doloremque asperiores maxime necessitatibus.</p>
+    <header>
+        <nav class="navbar">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/7318/7318791.png" alt="">
+            <ul>
+                <li class="nav-items"><a href="">Home</a></li>
+                <li class="nav-items"><a href="">About Us</a></li>
+                <li class="nav-items"><a href="">Blog</a></li>
+                <li class="nav-items"><a href="">Contact us</a></li>
+            </ul>
+            <form action="#">
+                <input type="text" class="search">
+                <button class="btn">search</button>
+            </form>
+        </nav>
+    </header>
+    <main class="section" >
+        <section id="section-1">
+            <h1>contact us</h1>
+            <form action="#">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <button type="submit" class="btn">submit</button>
+            </form>
+        </section>
+        <section id="section-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/7318/7318791.png" alt="">
+        </section>
+    </main>
 </body>
+
 </html>
