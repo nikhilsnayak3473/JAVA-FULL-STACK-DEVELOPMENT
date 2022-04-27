@@ -1,6 +1,5 @@
 package arrays_and_collections;
 
-import org.jetbrains.annotations.NotNull;
 
 public class Ticket implements Comparable<Ticket>{
     private final int ticketNumber;
@@ -30,7 +29,7 @@ public class Ticket implements Comparable<Ticket>{
     }
 
     @Override
-    public int compareTo(@NotNull Ticket ticket){
+    public int compareTo(Ticket ticket){
         return Integer.compare(this.ticketNumber, ticket.ticketNumber);
     }
 }
