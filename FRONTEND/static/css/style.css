@@ -4,7 +4,12 @@
 }
 
 body {
-    background-color:#8aabab;
+    background-image:url(../img/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
 }
 
 
@@ -41,8 +46,9 @@ nav ul li {
 }
 
 .search {
-    border: 5px solid cyan;
+    border: 1px solid cyan;
     border-radius: 15px;
+    height: 25px;
 }
 
 .btn {
@@ -68,9 +74,9 @@ nav ul li {
 
 #section-1{
     text-align: center;
-    border: 2px solid red;
+
     min-width: 40%;
-    background-color:rgb(124 183 254);
+
     
 }
 
@@ -82,11 +88,13 @@ nav ul li {
 }
 
 #section-1 input{
-    width: 25%;
+    width: 50%;
     height: 30px;
     border: 2px solid black;
     border-radius: 15px;
     text-align: center;
+    text-decoration: underline;
+    font-style: italic;
     margin: 10px 0px;
 }
 
@@ -94,12 +102,17 @@ nav ul li {
     border: 2px solid rgb(47, 179, 139);
     text-align: center;
     min-width: 40%;
-    background-color: #423b2f;
-    
+   
     
 }
 
 #section-2 img{
-    width: 20vw;
-    height: 20vw;
+    width: 40vw;
+    height: 25vw;
+}
+
+#submit-btn{
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 20px;
 }
