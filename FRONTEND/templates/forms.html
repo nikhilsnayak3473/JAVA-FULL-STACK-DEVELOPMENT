@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Application form</h1>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"> <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"> <br> <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="email" id="phone" placeholder="Enter your phone number"> <br> <br>
+
+        <label for="branch">Branch:</label>
+        <select name="" id="branch">
+            <option value="ece">ECE</option>
+            <option value="ise">ISE</option>
+            <option value="me">ME</option>
+            <option value="cv">CV</option>
+        </select> <br> <br>
+
+        <label>Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female"> <br> <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="" id="dob"> <br><br>
+
+        <label for="textbox">Address:</label> <br>
+        <textarea name="textbox" id="textbox" cols="30" rows="10" placeholder="Enter your Address"
+            style="resize:none"></textarea> <br>
+        <br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="" id="hobbies">sports
+        <input type="checkbox" name="" id="hobbies">alchol consumption
+        <input type="checkbox" name="" id="hobbies">Drugs 
+        <input type="checkbox" name="" id="hobbies" checked>PUBG  <br><br>
+
+        <label for="documents">Documents:</label>
+        <input type="file" name="" id="documents"> <br><br>
+
+        <input type="reset" name="" id="">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
