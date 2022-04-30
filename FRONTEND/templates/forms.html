@@ -10,23 +10,35 @@
 
 <body>
     <h1>Application form</h1>
-    <form action="">
+    <form action="#" method="get" autocomplete="on">
         <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name"> <br> <br>
+        <input type="text" id="name" placeholder="Enter your name" required> <br> <br>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email"> <br> <br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required> <br> <br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" name="email" id="phone" placeholder="Enter your phone number"> <br> <br>
+        <input type="tel" name="email" id="phone" placeholder="Enter your phone number" required> <br> <br>
 
         <label for="branch">Branch:</label>
         <select name="" id="branch">
+            <option value="none">---Select---</option>
             <option value="ece">ECE</option>
             <option value="ise">ISE</option>
             <option value="me">ME</option>
             <option value="cv">CV</option>
         </select> <br> <br>
+
+        <label for="stream">Stream Studied:</label>
+        <input list="stream">
+        <datalist name="stream" id="stream">
+            <option>PCMB</option>
+            <option>PCMCs</option>
+            <option>PCME</option>
+        </datalist> <br> <br>
+
+        <label for="passyear">Year of Passing:</label>
+        <input type="number"> <br><br>
 
         <label>Gender:</label>
         <label for="male">Male</label>
@@ -45,8 +57,8 @@
         <label for="hobbies">Hobbies:</label>
         <input type="checkbox" name="" id="hobbies">sports
         <input type="checkbox" name="" id="hobbies">alchol consumption
-        <input type="checkbox" name="" id="hobbies">Drugs 
-        <input type="checkbox" name="" id="hobbies" checked>PUBG  <br><br>
+        <input type="checkbox" name="" id="hobbies">Drugs
+        <input type="checkbox" name="" id="hobbies" checked>PUBG <br><br>
 
         <label for="documents">Documents:</label>
         <input type="file" name="" id="documents"> <br><br>
