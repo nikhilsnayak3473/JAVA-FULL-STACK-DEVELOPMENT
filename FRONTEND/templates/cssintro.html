@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS intro</title>
+    <!-- internal css using sytle tag -->
+    <style>
+        /*  selector are used to target the elements 
+            1. simple selectors
+                a. universal(*)
+                b. class(.)
+                c. id(#)
+                d. element    */
+        * {
+            text-decoration: underline;
+        }
+
+        .firstpara {
+            background-color: black;
+            color: white;
+        }
+
+        #seconddiv {
+            text-align: center;
+            background-color: aqua;
+        }
+
+        section {
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        /*  2. Combinator selectors 
+            3. Pesudo class  selectors 
+            4. Presudo element   */           
+    </style>
+</head>
+
+<body>
+    <!-- inline CSS using style attribute -->
+    <h1 style="text-align: center;">Heading is aligned to center of the page</h1>
+
+    <p class="firstpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum eos quasi inventore autem
+        tenetur? Culpa, temporibus cumque possimus, in nihil, amet ab autem suscipit quibusdam et dignissimos quidem
+        illo quisquam?</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, tempore. Pariatur eveniet, est laboriosam
+            sequi minima aliquam commodi, velit, reiciendis aperiam itaque nulla asperiores ex ipsam soluta corporis id
+            harum.</p>
+    </div>
+
+    <div id="seconddiv">
+        <h2>second div</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolore laborum reiciendis, maiores
+            tempore molestiae cum ratione ex libero, neque eum officia fuga. Deserunt eos animi libero iure, earum qui.
+        </p>
+    </div>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur iusto suscipit neque tempore
+            doloremque eum esse natus ad quam sapiente qui, vel sed incidunt distinctio veniam possimus accusamus
+            voluptates.</p>
+    </section>
+
+
+</body>
+
+</html>

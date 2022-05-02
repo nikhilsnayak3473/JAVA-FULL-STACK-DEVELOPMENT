@@ -5,46 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/style.css">
-
     <title>Home Page</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/7318/7318791.png" alt="">
             <ul>
+                <li><a href=""><img class="icon" src="../static/img/icon.png" alt=""></a></li>
                 <li class="nav-items"><a href="">Home</a></li>
                 <li class="nav-items"><a href="">About Us</a></li>
                 <li class="nav-items"><a href="">Blog</a></li>
                 <li class="nav-items"><a href="">Contact us</a></li>
             </ul>
             <form action="#">
-                <input type="text" class="search">
+                <input type="text" class="search" placeholder="Search Here">
                 <button class="btn">Search</button>
             </form>
         </nav>
     </header>
-    <main class="section" >
+    <main class="section">
         <section id="section-1">
-            <h1>Contact us</h1>
             <form action="#">
-                <label for="name">Enter Name:</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="name">Enter Name:</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="name">Enter Name:</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="name">Enter Name:</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <button type="submit" class="btn" id="submit-btn">Submit</button>
+                <h1>Sign Up</h1>
+                <table cellpadding="10px" cellspacing="10px">
+                    <tr>
+                        <th> <label for="name">Name:</label></th>
+                        <td><input type="text" id="name" placeholder="Enter your name" class="input"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td class="tableData"><input type="text" id="email" placeholder="Enter your e-mail"
+                                class="input"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password">Password:</label></th>
+                        <td><input type="password" name="" id="password" class="input" placeholder="Enter a Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="confirmpassword">Confirm Password:</label></th>
+                        <td><input type="password" name="" id="confirmpassword" class="input"
+                                placeholder="Confirm your Password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="checkbox" name="" id=""> I agree to Terms and Conditions</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" class="btn">Sign Up</button></td>
+                    </tr>
+                </table>
             </form>
         </section>
-       <section id="section-2">
-
-       </section>
+        <section id="section-2">
+            <figure>
+                <img width="350px" src="../static/img/icon.png" alt="">
+                <figcaption>My website</figcaption>
+            </figure>
+        </section>
     </main>
+    <footer>
+        <div style="text-align: center;">
+            <span>Copyright © 2022, All Rights Reserved </span>
+            <details>
+                <summary>Social Media</summary>
+                <ul style="list-style: none;">
+                    <li><a href="https://www.facebook.com/" target="_blank">FaceBook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </details>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1b2a268567.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
