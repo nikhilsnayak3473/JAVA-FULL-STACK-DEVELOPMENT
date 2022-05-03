@@ -34,8 +34,49 @@
         }
 
         /*  2. Combinator selectors 
-            3. Pesudo class  selectors 
-            4. Presudo element   */           
+                a. desendent( )
+                b. child selector(>)
+                c. general(~)
+                d. adjacent(+)  */
+        section div {
+            background-color: cyan;
+            color: black;
+        }
+
+
+
+        /*  3. Pesudo class  selectors 
+                a. */
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: green;
+}
+a:hover{
+    color: black;
+}
+
+#id3:link{
+    color: purple;
+
+}
+#id3:visited{
+    color: aqua;
+}
+#id3:active{
+    color: tomato;
+}
+
+/* #id3:focus{
+    color: brown;
+} */
+
+
+            
+           /* 4. Presudo element   */
     </style>
 </head>
 
@@ -64,8 +105,26 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur iusto suscipit neque tempore
             doloremque eum esse natus ad quam sapiente qui, vel sed incidunt distinctio veniam possimus accusamus
             voluptates.</p>
+        <div>
+            <h2>desendent</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nostrum nulla, ut aperiam est cumque
+                optio impedit? Nulla minus non porro facere temporibus mollitia dolore corrupti dolor ratione
+                recusandae? Asperiores nihil ratione odit debitis, fugiat earum laborum fuga corporis, animi tempora
+                iure aut illo exercitationem suscipit ipsam quod inventore quas hic aperiam. Porro, quod rerum quas
+                debitis aliquam ad ex dignissimos quidem eius blanditiis neque corporis illo aperiam itaque consequuntur
+                mollitia maiores placeat dolores sunt velit esse! Optio suscipit at et vitae quos possimus quo
+                perspiciatis. Quia, molestiae. Fugit praesentium id rerum quis numquam aspernatur quisquam, consectetur
+                amet cumque sed?</p>
+        </div>
     </section>
 
+    <a href="https://www.facebook.com" target="_blank" id="id1">Facebook</a> <br>
+    <a href="https://www.youtube.com" id="id2">youtube</a> <br>
+
+    <a href="https://www.github.com" >git</a>
+
+    
+    <a href="https://www.facebook.com" id="id3" target="_blank">mypage</a>
 
 </body>
 

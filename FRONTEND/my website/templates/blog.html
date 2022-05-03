@@ -5,32 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sementic Tags</title>
+    <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Blog</title>
 </head>
 
-<body style="background-color: black; color: white;">
-    <!-- Sementic tags are also called grouping tags -->
-    <!-- basic sementic tags are <div> and <span>  -->
-    <!-- div is a block level element -->
-    <!-- span is a inline element -->
-
+<body>
     <header>
-        <h1>
-            <marquee behavior="" direction="right">Alva's</marquee>
-        </h1>
-        <nav>
-            <ul
-                style="display: flex; list-style: none; background-color: cyan; border: 2px solid black; border-radius: 15px; justify-content: space-evenly;">
-                <li style="padding: 10px; margin: 10px; "><a href="#" style="text-decoration: none;">TECHNOLOGY</a></li>
-                <li style="padding: 10px; margin: 10px; "><a href="#" style="text-decoration: none;">ENTERTAINMENT</a>
-                </li>
-                <li style="padding: 10px; margin: 10px; "><a href="#" style="text-decoration: none;">SPORTS</a></li>
-                <li style="padding: 10px; margin: 10px; "><a href="#" style="text-decoration: none;">POLITICS</a></li>
+        <nav class="navbar sticky">
+            <ul>
+                <li><a href=""><img class="icon" src="../static/img/icon.png" alt=""></a></li>
+                <li class="nav-items"><a href="index.html">Home</a></li>
+                <!-- <li class="nav-items"><a href="">About Us</a></li>
+                <li class="nav-items"><a href="">Contact us</a></li> -->
+                <li class="nav-items"><a href="blog.html">Blog</a></li>
             </ul>
+            <form action="#">
+                <input type="text" class="search" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </form>
         </nav>
-    </header>
 
-    <main style="text-align: center;">
+    </header>
+    <main class="blog-main">
         <section>
             <h2>Technology</h2>
             <article>
@@ -115,16 +112,14 @@
         </section>
     </main>
     <footer>
-        <div style="text-align: center;">
-            <span>Copyright © 2022, All Rights Reserved </span> 
-            <details>
-                <summary>Social Media</summary>
-               <ul style="list-style: none;">
-                   <li><a href="https://www.facebook.com/">FaceBook</a></li>
-                   <li><a href="https://twitter.com/">Twitter</a></li>
-               </ul>
-            </details>
-        </div>
+        <span>Copyright © 2022, All Rights Reserved </span>
+        <details>
+            <summary>Social Media</summary>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">FaceBook</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </details>
     </footer>
 </body>
 
