@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Baloo Bhai 2', cursive;
 }
 
@@ -106,7 +107,6 @@ body {
 
 #section-1 {
     padding-top: 20px;
-    border: 5px solid #dcffff;
     border-radius: 15px;
     background-color: black;
     color: white;
@@ -115,7 +115,7 @@ body {
 }
 
 #section-1:hover {
-
+    box-shadow: inset 10px 10px 10px rgb(127 179 254);
     color: wheat;
 
 }
@@ -145,14 +145,15 @@ textarea {
 
 
 #section-2 {
-    border: 5px solid #dcffff;
     background-color: black;
     color: white;
     border-radius: 15px;
     padding-bottom: 10px;
 }
 
-figcaption:hover {
+
+#section-2:hover {
+    box-shadow: inset 10px 10px 10px rgb(127 179 254);
     color: rgb(127 179 254);
 }
 
