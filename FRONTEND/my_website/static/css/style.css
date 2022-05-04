@@ -14,19 +14,39 @@ body {
     font-family: 'Baloo Bhai 2', cursive;
 }
 
+header{
+    min-height: 80px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    max-width: 80%;
+    margin: auto;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #9a8efe;
+}
+
+h1:hover{
+    text-shadow: 5px 5px 10px black;
+}
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: black;
-    min-height: 3rem;
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .navbar form {
@@ -56,6 +76,7 @@ body {
 
 .nav-items a {
     text-decoration: none;
+    font-size: larger;
     color: wheat;
 }
 
@@ -69,7 +90,8 @@ body {
 }
 
 .icon {
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 5px;
     padding: 5px;
     width: 25px;
     height: 25px;
@@ -101,7 +123,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 94.5vh;
+    min-height: 75.5vh;
     text-align: center;
 }
 
@@ -115,13 +137,13 @@ body {
 }
 
 #section-1:hover {
-    box-shadow: inset 10px 10px 10px rgb(127 179 254);
+    box-shadow: -10px -10px 10px rgb(127 179 254);
     color: wheat;
 
 }
 
-#section-1 h1 {
-    font-size: xx-large;
+#section-1 h2 {
+    font-size: x-large;
     text-decoration: underline;
 }
 
@@ -172,9 +194,12 @@ details ul{
 
 .blog-main{
     text-align: center; 
-    margin: 120px;
 }
 
 .blogimg{
     width:"500px";
+}
+
+marquee{
+    margin-top: 20px;
 }
