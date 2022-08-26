@@ -11,9 +11,9 @@ public class Bag {
         this.book = book;
     }
 
-    public void displayBookDetails(){
-        System.out.println("Bag Colour: "+this.colour);
-        System.out.println("Bag Price: "+this.price);
+    public void displayBookDetails() {
+        System.out.println("Bag Colour: " + this.colour);
+        System.out.println("Bag Price: " + this.price);
         System.out.println("----------Book details---------");
         this.book.getBookDetails();
     }

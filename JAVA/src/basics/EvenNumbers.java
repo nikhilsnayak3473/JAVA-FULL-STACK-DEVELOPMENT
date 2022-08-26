@@ -1,7 +1,5 @@
 package basics;
 
-import java.util.Scanner;
-
 class EvenNumbers {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -15,14 +13,14 @@ class EvenNumbers {
 //            i++;
 //        }
 
-        long num  = 14596325874692L;
-        int count=0;
+        long num = 14596325874692L;
+        int count = 0;
 
-        while(num!=0){
-            if (num%2!=0){
+        while (num != 0) {
+            if (num % 2 != 0) {
                 count++;
             }
-            num=num/10;
+            num = num / 10;
         }
         System.out.println(count);
     }

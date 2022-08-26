@@ -9,11 +9,11 @@ public class GreatestOfThree {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-        if (a>b&&a>c){
+        if (a > b && a > c) {
             System.out.println("A is greater");
-        }else if (b>c){
+        } else if (b > c) {
             System.out.println("B is greater");
-        }else {
+        } else {
             System.out.println("c is greater");
         }
     }

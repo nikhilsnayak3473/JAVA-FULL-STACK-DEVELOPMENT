@@ -10,7 +10,7 @@ public class BusMain {
         String busNumber = sc.nextLine();
         System.out.println("Enter the Bus Name");
         String busName = sc.nextLine();
-        Bus bus = new Bus(busNumber,busName);
+        Bus bus = new Bus(busNumber, busName);
         while (true) {
             System.out.println("Enter your choice\n" +
                     "1. Generate Ticket\n" +

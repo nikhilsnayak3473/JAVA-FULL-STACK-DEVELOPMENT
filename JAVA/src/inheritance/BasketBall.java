@@ -6,9 +6,8 @@ public class BasketBall extends Ball {
         super(radius);
     }
 
-    public void displayBasketBallRadius()
-    {
-        System.out.println("Radius: "+super.getRadius());
+    public void displayBasketBallRadius() {
+        System.out.println("Radius: " + super.getRadius());
     }
 
 }

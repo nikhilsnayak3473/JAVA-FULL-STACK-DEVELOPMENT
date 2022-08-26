@@ -15,6 +15,13 @@ public class Employee {
         this.designation = designation;
     }
 
+    public static void main(String[] args) {
+        Employee e1 = new Employee(1, "employee1", 30, 100000, "employee");
+        Employee e2 = new Employee(2, "employee2", 35, 150000, "senior employee");
+        System.out.println(e1);
+        System.out.println(e2);
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -24,12 +31,5 @@ public class Employee {
                 ", salary=" + salary +
                 ", designation='" + designation + '\'' +
                 '}';
-    }
-
-    public static void main(String[] args) {
-        Employee e1 = new Employee(1,"employee1",30,100000,"employee");
-        Employee e2 = new Employee(2,"employee2",35,150000,"senior employee");
-        System.out.println(e1);
-        System.out.println(e2);
     }
 }

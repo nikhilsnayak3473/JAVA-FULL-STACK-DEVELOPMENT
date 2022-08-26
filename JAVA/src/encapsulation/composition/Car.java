@@ -13,10 +13,10 @@ public class Car {
         this.engine = engine;
     }
 
-    public void printDetails(){
-        System.out.println("Car model: "+this.model);
-        System.out.println("Car colour: "+this.colour);
-        System.out.println("Car price: "+this.price);
+    public void printDetails() {
+        System.out.println("Car model: " + this.model);
+        System.out.println("Car colour: " + this.colour);
+        System.out.println("Car price: " + this.price);
         System.out.println("Car Engine Details: ");
         this.engine.printDetails();
     }

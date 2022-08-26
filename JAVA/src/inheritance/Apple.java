@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Apple extends Fruit{
+public class Apple extends Fruit {
     int quantity;
     String type;
 
@@ -11,7 +11,7 @@ public class Apple extends Fruit{
     }
 
     public static void main(String[] args) {
-        Apple a = new Apple("Red",200,4,"Kashmir");
+        Apple a = new Apple("Red", 200, 4, "Kashmir");
 
         System.out.println(a.type);
         System.out.println(a.price);

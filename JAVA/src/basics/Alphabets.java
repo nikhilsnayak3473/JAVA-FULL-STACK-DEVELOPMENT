@@ -6,6 +6,6 @@ public class Alphabets {
         do {
             System.out.println(ch);
             ch++;
-        }while (ch<='z');
+        } while (ch <= 'z');
     }
 }

@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Book extends Author{
+public class Book extends Author {
     String name;
     double price;
 
@@ -13,12 +13,12 @@ public class Book extends Author{
     }
 
     public static void main(String[] args) {
-        Book b =new Book("KGF",250,"Prashant Neel",30,"Karnataka");
-        System.out.println("Name: "+b.name);
-        System.out.println("Price: "+b.price);
-        System.out.println("Author Name: "+b.authorName);
-        System.out.println("Age: "+b.age);
-        System.out.println("Place: "+b.place);
+        Book b = new Book("KGF", 250, "Prashant Neel", 30, "Karnataka");
+        System.out.println("Name: " + b.name);
+        System.out.println("Price: " + b.price);
+        System.out.println("Author Name: " + b.authorName);
+        System.out.println("Age: " + b.age);
+        System.out.println("Place: " + b.place);
 
     }
 }

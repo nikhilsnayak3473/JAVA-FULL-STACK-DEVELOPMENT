@@ -21,18 +21,18 @@ class Calculator {
         int operand1 = sc.nextInt();
         System.out.println("Enter the operand2");
         int operand2 = sc.nextInt();
-        switch (operator){
+        switch (operator) {
             case '+':
-                System.out.println(operand1+operand2);
+                System.out.println(operand1 + operand2);
                 break;
             case '-':
-                System.out.println(operand1-operand2);
+                System.out.println(operand1 - operand2);
                 break;
             case '*':
-                System.out.println(operand1*operand2);
+                System.out.println(operand1 * operand2);
                 break;
             case '/':
-                System.out.println((float) (operand1/ operand2));
+                System.out.println((float) (operand1 / operand2));
                 break;
             default:
                 System.out.println("Enter a valid operator");

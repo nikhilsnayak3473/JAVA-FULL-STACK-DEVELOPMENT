@@ -1,6 +1,6 @@
 package abstraction;
 
-public class AtmMachine extends Atm{
+public class AtmMachine extends Atm {
     @Override
     public void deposit() {
         System.out.println("Depositing............");

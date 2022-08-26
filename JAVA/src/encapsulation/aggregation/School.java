@@ -14,7 +14,7 @@ public class School {
     }
 
     public void admitStudent() {
-        if(student == null) {
+        if (student == null) {
             System.out.println("Enter the Student Id:");
             int id = sc.nextInt();
             System.out.println("Enter the Name:");
@@ -25,8 +25,7 @@ public class School {
             student = new Student(id, name, phNo);
             System.out.println("Student Admitted successfully");
             this.student.getStudentDetails();
-        }
-        else {
+        } else {
             System.out.println("Admissions Full!!");
         }
 

@@ -1,4 +1,5 @@
 package encapsulation;
+
 import java.util.Scanner;
 
 public class SimCardMain {
@@ -10,16 +11,14 @@ public class SimCardMain {
         System.out.println("Enter service provider");
         String serviceProvider = sc.next();
         System.out.println("Enter local call rates");
-        String  localCallRate = sc.next();
+        String localCallRate = sc.next();
 
-        SimCard s1 = new SimCard(number,serviceProvider,localCallRate);
+        SimCard s1 = new SimCard(number, serviceProvider, localCallRate);
 
-        while (true)
-        {
+        while (true) {
             System.out.println("Enter your choice:\n1. Update service provider\n2. update call rates\n3. View Number\n4. view service provider\n5. view call rates\n6. print sim details\n7. Exit");
             choice = sc.nextInt();
-            switch (choice)
-            {
+            switch (choice) {
                 case 1:
                     System.out.println("Enter the Service provider");
                     serviceProvider = sc.next();

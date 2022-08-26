@@ -9,8 +9,8 @@ public class Book {
         this.price = price;
     }
 
-    public void getBookDetails(){
-        System.out.println("Book Title: "+this.title);
-        System.out.println("Book Price: "+this.price);
+    public void getBookDetails() {
+        System.out.println("Book Title: " + this.title);
+        System.out.println("Book Price: " + this.price);
     }
 }

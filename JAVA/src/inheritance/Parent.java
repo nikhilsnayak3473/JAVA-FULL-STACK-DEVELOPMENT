@@ -1,4 +1,4 @@
 package inheritance;
 
-public class Parent extends GrandParent{
+public class Parent extends GrandParent {
 }

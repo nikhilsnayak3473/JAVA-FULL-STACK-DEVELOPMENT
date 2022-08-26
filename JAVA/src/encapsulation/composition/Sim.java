@@ -1,8 +1,8 @@
 package encapsulation.composition;
 
 public class Sim {
-    private String simNo;
     String serviceProvider;
+    private String simNo;
 
     public Sim() {
     }
@@ -16,8 +16,8 @@ public class Sim {
         return simNo;
     }
 
-    public void getSimDetails(){
-        System.out.println("Sim No: "+this.simNo);
-        System.out.println("Service Provider: "+this.serviceProvider);
+    public void getSimDetails() {
+        System.out.println("Sim No: " + this.simNo);
+        System.out.println("Service Provider: " + this.serviceProvider);
     }
 }

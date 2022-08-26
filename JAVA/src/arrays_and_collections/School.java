@@ -79,12 +79,12 @@ public class School {
     public void viewAllStudentDetails() {
         if (!studentList.isEmpty()) {
             System.out.println(studentList);
-        }else{
+        } else {
             System.out.println("Student list is Empty");
         }
     }
 
-    public void updateStudentName(){
+    public void updateStudentName() {
         if (!studentList.isEmpty()) {
             System.out.println("Enter the Student Id");
             String studentId = sc.next();
@@ -93,7 +93,7 @@ public class School {
                 if (student.getStudentId().equals(studentId)) {
                     System.out.println("Enter the new name");
                     student.studentName = sc.next();
-                    System.out.println("Name updated successfully\nName: "+student.studentName);
+                    System.out.println("Name updated successfully\nName: " + student.studentName);
                     return;
                 }
             }
@@ -102,7 +102,8 @@ public class School {
             System.out.println("No students found");
         }
     }
-    public void updateStudentPhoneNumber(){
+
+    public void updateStudentPhoneNumber() {
         if (!studentList.isEmpty()) {
             System.out.println("Enter the Student Id");
             String studentId = sc.next();
@@ -112,7 +113,7 @@ public class School {
                     System.out.println("Enter the new Phone Number");
                     long studentPhoneNumber = sc.nextLong();
                     student.setStudentPhoneNumber(studentPhoneNumber);
-                    System.out.println("Phone Number updated successfully\nPhone Number: "+student.getStudentPhoneNumber());
+                    System.out.println("Phone Number updated successfully\nPhone Number: " + student.getStudentPhoneNumber());
                     return;
                 }
             }

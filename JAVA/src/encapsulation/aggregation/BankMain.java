@@ -36,8 +36,7 @@ public class BankMain {
                 case 4:
                     try {
                         bank.withdraw();
-                    }catch (InSufficientBalance inSufficientBalance)
-                    {
+                    } catch (InSufficientBalance inSufficientBalance) {
                         System.out.println("Insufficient balance");
                     }
 

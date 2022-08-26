@@ -19,12 +19,12 @@ public class Student {
     }
 
     public Student(String name, int id, int age) {
-        this(name,id);
+        this(name, id);
         this.age = age;
     }
 
     public Student(String name, int id, int age, String phNo) {
-        this(name,id,age);
+        this(name, id, age);
         this.phNo = phNo;
     }
 
@@ -60,10 +60,10 @@ public class Student {
         this.phNo = phNo;
     }
 
-    public void getStudentDetails(){
-        System.out.println("Student Name: "+this.name);
-        System.out.println("Student id: "+this.id);
-        System.out.println("Student age: "+this.age);
-        System.out.println("Student Phone Number: "+this.phNo);
+    public void getStudentDetails() {
+        System.out.println("Student Name: " + this.name);
+        System.out.println("Student id: " + this.id);
+        System.out.println("Student age: " + this.age);
+        System.out.println("Student Phone Number: " + this.phNo);
     }
 }

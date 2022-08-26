@@ -15,7 +15,7 @@ public class Hostel {
     }
 
     public Hostel(String name, String location, Student student) {
-        this(name,location);
+        this(name, location);
         this.student = student;
     }
 
@@ -43,8 +43,8 @@ public class Hostel {
         this.student = student;
     }
 
-    public void displayHostelDetails(){
-        System.out.println("Hostel Name: "+this.name);
-        System.out.println("Hostel Location: "+this.location);
+    public void displayHostelDetails() {
+        System.out.println("Hostel Name: " + this.name);
+        System.out.println("Hostel Location: " + this.location);
     }
 }

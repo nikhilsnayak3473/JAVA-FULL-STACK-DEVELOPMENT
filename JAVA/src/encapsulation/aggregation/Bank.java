@@ -1,7 +1,8 @@
 package encapsulation.aggregation;
 
-import java.util.Scanner;
 import exception.InSufficientBalance;
+
+import java.util.Scanner;
 
 public class Bank {
     String bankName;
@@ -60,7 +61,7 @@ public class Bank {
         }
     }
 
-    public void withdraw() throws InSufficientBalance{
+    public void withdraw() throws InSufficientBalance {
         if (account != null) {
             long initialBalance = account.getAccBalance();
             System.out.println("Enter the Amount to be withdrawn");

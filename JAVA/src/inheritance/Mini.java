@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Mini extends Cab{
+public class Mini extends Cab {
     double price;
 
     public Mini(String from, String to, double price) {

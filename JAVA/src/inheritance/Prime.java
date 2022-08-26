@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Prime extends Cab{
+public class Prime extends Cab {
     double price;
 
     public Prime(String from, String to, double price) {

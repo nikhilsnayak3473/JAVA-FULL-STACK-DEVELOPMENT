@@ -13,9 +13,9 @@ public class Mobile {
         this.sim2 = sim2;
     }
 
-    public void getMobileDetails(){
-        System.out.println("Mobile model: "+this.model);
-        System.out.println("Mobile price: "+this.price);
+    public void getMobileDetails() {
+        System.out.println("Mobile model: " + this.model);
+        System.out.println("Mobile price: " + this.price);
         System.out.println("Sim1 Details:");
         this.sim1.getSimDetails();
         System.out.println("Sim2 Details:");

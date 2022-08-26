@@ -6,11 +6,11 @@ public class Grade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int percentage = scanner.nextInt();
-        if (percentage>=80){
+        if (percentage >= 80) {
             System.out.println("Topper");
-        }else if(percentage>=60){
+        } else if (percentage >= 60) {
             System.out.println("Average");
-        }else {
+        } else {
             System.out.println("legend");
         }
 

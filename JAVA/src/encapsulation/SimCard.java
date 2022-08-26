@@ -15,7 +15,7 @@ public class SimCard {
     }
 
     public SimCard(String number, String serviceProvider, String localCallRate) {
-        this(number,serviceProvider);
+        this(number, serviceProvider);
         this.localCallRate = localCallRate;
     }
 
@@ -39,9 +39,9 @@ public class SimCard {
         this.localCallRate = localCallRate;
     }
 
-    public void printSimDetails(){
-        System.out.println("Sim Number: "+this.number);
-        System.out.println("Service Provider: "+this.serviceProvider);
-        System.out.println("Local Call Rate: "+this.localCallRate);
+    public void printSimDetails() {
+        System.out.println("Sim Number: " + this.number);
+        System.out.println("Service Provider: " + this.serviceProvider);
+        System.out.println("Local Call Rate: " + this.localCallRate);
     }
 }

@@ -1,7 +1,7 @@
 package arrays_and_collections;
 
 
-public class Ticket implements Comparable<Ticket>{
+public class Ticket implements Comparable<Ticket> {
     private final int ticketNumber;
     String passengerName;
     String arrivalPlace;
@@ -29,7 +29,7 @@ public class Ticket implements Comparable<Ticket>{
     }
 
     @Override
-    public int compareTo(Ticket ticket){
+    public int compareTo(Ticket ticket) {
         return Integer.compare(this.ticketNumber, ticket.ticketNumber);
     }
 }

@@ -10,8 +10,7 @@ public class TryCatch {
             System.out.println("cannot divide by zero");
         } catch (NullPointerException nullPointerException) {
             System.out.println("null point exception");
-        }
-        finally {
+        } finally {
             System.out.println("hii");
         }
 

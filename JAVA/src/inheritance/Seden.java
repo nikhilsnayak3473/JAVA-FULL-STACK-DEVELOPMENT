@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Seden extends Cab{
+public class Seden extends Cab {
     double price;
 
     public Seden(String from, String to, double price) {

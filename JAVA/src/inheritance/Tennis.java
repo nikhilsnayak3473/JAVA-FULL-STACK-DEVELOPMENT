@@ -6,8 +6,7 @@ public class Tennis extends Ball {
         super(radius);
     }
 
-    public void displayTennisBallRadius()
-    {
-        System.out.println("Radius: "+super.getRadius());
+    public void displayTennisBallRadius() {
+        System.out.println("Radius: " + super.getRadius());
     }
 }
