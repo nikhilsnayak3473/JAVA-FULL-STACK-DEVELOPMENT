@@ -9,25 +9,25 @@ public class XylemAndPhloem {
         System.out.println("Enter a number");
         int number = scanner.nextInt();
         int temp = number;
-        int last = temp%10;
-        int first=0;
+        int last = temp % 10;
+        int first = 0;
         int sum = 0;
-        while (temp!=0){
-            first=temp%10;
-            temp/=10;
+        while (temp != 0) {
+            first = temp % 10;
+            temp /= 10;
         }
         temp = number;
-        while (temp!=0){
-            sum+=(temp%10);
-            temp/=10;
+        while (temp != 0) {
+            sum += (temp % 10);
+            temp /= 10;
         }
 
-        int num1=first+last;
-        sum = sum-num1;
+        int num1 = first + last;
+        sum = sum - num1;
 
-        if (sum==num1){
+        if (sum == num1) {
             System.out.println("Xylem number");
-        }else {
+        } else {
             System.out.println("Phloem number");
         }
 
