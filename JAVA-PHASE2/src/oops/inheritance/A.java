@@ -1,5 +1,8 @@
 package oops.inheritance;
 
 public class A {
-	int a = 10;
+	
+	private int a = 10;
+	static String s = "pandhi";
+	A(){}
 }
