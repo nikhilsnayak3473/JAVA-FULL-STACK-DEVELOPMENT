@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-decoration: underline;
+	width: 50%;
+	margin: 2em auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 50%;
+	margin: auto;
+	padding: 5em;
+	background-color: #f8f8f8;
+	border-radius: 0.25em;
+	border: 2px solid rgb(0 0 0/ 50%);
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form-control input {
+	height: 2rem;
+	padding: 0 2em;
+}
+
+.btn {
+	width: fit-content;
+	margin: auto;
+	padding: 0.5em 1em;
+	border: none;
+	outline: none;
+	border-radius: 0.25em;
+	background-color: #00ffff4d;
+}
+
+.btn:hover {
+	background-color: cyan;
+}
+</style>
+</head>
+<body>
+	<h1>Register Here</h1>
+	<form action="register" method="post">
+
+		<div class="form-control">
+			<label for="name">Name:</label> <input type="text" name="name"
+				id="name" />
+		</div>
+		<div class="form-control">
+			<label for="email">Email:</label> <input type="email" name="email"
+				id="email" />
+		</div>
+		<div class="form-control">
+			<label for="age">Age:</label> <input type="text" name="age" id="age" />
+		</div>
+
+		<button class="btn" type="submit">Register</button>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+	<bean id="dog" class="com.nikhilsnayak3473.ioc.Dog"></bean>
+	<bean id="student" class="com.nikhilsnayak3473.ioc.Student">
+
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="nikhil"></constructor-arg>
+		<constructor-arg name="email"
+			value="nikhilsnayak3473@gmail.com"></constructor-arg>
+
+	</bean>
+
+	<bean id="teacher" class="com.nikhilsnayak3473.ioc.Teacher">
+		<property name="id" value="10"></property>
+		<property name="name" value="kruthik"></property>
+		<property name="email" value="kruthik22bs@gmail.com"></property>
+	</bean>
+
+	<bean id="engine" class="com.nikhilsnayak3473.ioc.Engine"></bean>
+
+	<bean id="car" class="com.nikhilsnayak3473.ioc.Car">
+		<constructor-arg name="engine" ref="engine"></constructor-arg>
+	</bean>
+
+
+
+</beans>
